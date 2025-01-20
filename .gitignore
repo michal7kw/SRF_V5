@@ -1,0 +1,6 @@
+.snakemake/
+*.tmp*
+*.log
+*.err
+*.zip
+*.gz
