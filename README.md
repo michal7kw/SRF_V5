@@ -19,32 +19,6 @@ The pipeline includes the following steps:
 3. Peak calling (MACS2)
 4. BigWig file generation for visualization
 
-## Prerequisites
-
-The following tools need to be installed:
-- Snakemake
-- FastQC
-- MultiQC
-- Bowtie2
-- Samtools
-- MACS2
-- deepTools
-
-## Configuration
-
-Before running the pipeline:
-1. Edit `config.yaml` to set:
-   - Path to your reference genome index
-   - Genome size for MACS2
-   - Number of threads to use
-
-## Running the Pipeline
-
-To run the pipeline:
-```bash
-sbatch run_snakefile.sh
-```
-
 ## Output Files
 
 The pipeline generates the following output directories:
@@ -52,11 +26,3 @@ The pipeline generates the following output directories:
 - `alignment/`: Aligned BAM files
 - `peaks/`: MACS2 peak calls
 - `bigwig/`: BigWig files for visualization
-
-## Analysis Considerations
-
-Due to the lack of biological replication:
-1. Results should be interpreted with caution
-2. Statistical power is limited
-3. Consider validating key findings with additional experiments
-4. Compare results with published datasets if available
