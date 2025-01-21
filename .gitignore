@@ -4,3 +4,6 @@
 *.err
 *.zip
 *.gz
+*.bam*
+*.bw
+*.bed
